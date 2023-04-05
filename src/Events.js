@@ -30,9 +30,6 @@ function Events({ set_details, set_imgUrl, data, set_data, filterData, set_filte
         }
         else {
             set_filterData(data.filter(d => {
-                //console.log((new Date(d.Date.seconds * 1000)) === (new Date(dateFilter)));
-                console.log(new Date(d.Date.seconds * 1000));
-                console.log(new Date(dateFilter));
                 return ((filters.some(val => (val === d.Location) || (val === d.Gender))) || 
                 (((new Date(d.Date.seconds * 1000)).getTime()) === ((new Date(dateFilter)).getTime())));   
             }

@@ -1,0 +1,143 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - 20px);
+}
+
+.navbar {
+  position: relative;
+  background-color: blue;
+  display: flex;
+}
+
+.navbar .brand {
+  width: 150px;
+  height: 68px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.number li {
+  display: inline;
+  margin-right: 10px;
+  padding: 10px 20px 10px 20px;
+  font-size: 28px;
+}
+
+.number .mal {
+  background-color: green;
+}
+
+.number .fem {
+  background-color: red;
+  color: white;
+}
+
+.info {
+  width: 60%;
+}
+
+.gender {
+  text-align: center;
+}
+
+.subdet {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.details {
+  width: 30%;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.subdetails {
+  width: 70%;
+}
+
+.subdetails p {
+  font-size: 18px;
+}
+
+.image {
+  width: 45%;
+}
+
+img {
+  width: 100%;
+  height: 88%;
+}
+
+.events {
+  position: relative;
+}
+
+.fil {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.ficon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.eventlist {
+  width: 40%;
+  height: calc(100vh - 87px);
+  border: 5px solid gray;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.eventele {
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.eventele:hover {
+  background-color: gray;
+  color: white;
+}
+
+.eventeleclick {
+  background-color: gray;
+  color: white;
+}
+
+.eventhead {
+  display: flex;
+  flex-direction: row;
+}
+
+.datetime {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
